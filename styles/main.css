@@ -32,7 +32,7 @@ body {
 }
 
 body {
-  margin: 0;
+  /* margin: 0; */
   -webkit-font-smoothing: antialiased;
 }
 
@@ -98,14 +98,15 @@ body {
   color: var(--color-font);
   background-color: #747d8c;
   align-self: center;
-  /* text-align: center; */
-  /* display: flex; */
-  /* flex-direction: column; */
+  text-align: center;
+  /* display: flex;
+  flex-direction: row; */
 }
 
 header {
   text-align: left;
-  display: block;
+  justify-content: space-evenly;
+  align-self: stretch;
 }
 
 h1,
@@ -182,16 +183,24 @@ a[href]:hover {
 
 .hero h1 {
   font-size: clamp(3.5rem, 6vw, 6rem);
+  inset: 0;
+  position: relative;
+  display: flex;
+  justify-content: flex-start;
 }
 
-.hero .text {
-  position: absolute;
+.hero p {
+  position: relative;
   color: white;
   inset: 0;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
 }
 
 .cards {
   display: flex;
+  /* justify-content: space-evenly; */
   gap: 1rem;
   margin: 0 1rem;
 }
