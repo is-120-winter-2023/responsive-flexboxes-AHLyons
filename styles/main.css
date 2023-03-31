@@ -26,10 +26,10 @@
   line-height: calc(1em + 0.5rem);
 }
 
-html,
+/* html,
 body {
   height: 100%;
-}
+} */
 
 body {
   /* margin: 0; */
@@ -72,6 +72,8 @@ h6 {
 /* temp CSS for HTML only assignments */
 picture img {
   width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 svg {
@@ -184,13 +186,13 @@ a[href]:hover {
 .hero h1 {
   font-size: clamp(3.5rem, 6vw, 6rem);
   inset: 0;
-  position: relative;
+  position: absolute;
   display: flex;
   justify-content: flex-start;
 }
 
 .hero p {
-  position: relative;
+  position: absolute;
   color: white;
   inset: 0;
   display: flex;
