@@ -232,3 +232,11 @@ a[href]:hover {
   padding: 0;
   position: absolute;
 }
+
+@media (min-width: 401px) {
+  /* tablet CSS */
+}
+
+@media (min-width: 801px) {
+  /* desktop CSS */
+}
